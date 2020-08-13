@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1209
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "String_primary", "String_primary\String_primary.vcxproj", "{A41F63FA-9C2B-4E0F-A498-813570667F84}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KMP", "KMP\KMP.vcxproj", "{88A45BF2-7C7D-4BC1-8059-6C382DB1FFBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{A41F63FA-9C2B-4E0F-A498-813570667F84}.Release|x64.Build.0 = Release|x64
 		{A41F63FA-9C2B-4E0F-A498-813570667F84}.Release|x86.ActiveCfg = Release|Win32
 		{A41F63FA-9C2B-4E0F-A498-813570667F84}.Release|x86.Build.0 = Release|Win32
+		{88A45BF2-7C7D-4BC1-8059-6C382DB1FFBC}.Debug|x64.ActiveCfg = Debug|x64
+		{88A45BF2-7C7D-4BC1-8059-6C382DB1FFBC}.Debug|x64.Build.0 = Debug|x64
+		{88A45BF2-7C7D-4BC1-8059-6C382DB1FFBC}.Debug|x86.ActiveCfg = Debug|Win32
+		{88A45BF2-7C7D-4BC1-8059-6C382DB1FFBC}.Debug|x86.Build.0 = Debug|Win32
+		{88A45BF2-7C7D-4BC1-8059-6C382DB1FFBC}.Release|x64.ActiveCfg = Release|x64
+		{88A45BF2-7C7D-4BC1-8059-6C382DB1FFBC}.Release|x64.Build.0 = Release|x64
+		{88A45BF2-7C7D-4BC1-8059-6C382DB1FFBC}.Release|x86.ActiveCfg = Release|Win32
+		{88A45BF2-7C7D-4BC1-8059-6C382DB1FFBC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
