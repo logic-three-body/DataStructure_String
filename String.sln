@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "String_primary", "String_pr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KMP", "KMP\KMP.vcxproj", "{88A45BF2-7C7D-4BC1-8059-6C382DB1FFBC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StringPlus", "StringPlus\StringPlus.vcxproj", "{EC014CC9-E43A-4E9B-A9F2-47AF211343C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{88A45BF2-7C7D-4BC1-8059-6C382DB1FFBC}.Release|x64.Build.0 = Release|x64
 		{88A45BF2-7C7D-4BC1-8059-6C382DB1FFBC}.Release|x86.ActiveCfg = Release|Win32
 		{88A45BF2-7C7D-4BC1-8059-6C382DB1FFBC}.Release|x86.Build.0 = Release|Win32
+		{EC014CC9-E43A-4E9B-A9F2-47AF211343C4}.Debug|x64.ActiveCfg = Debug|x64
+		{EC014CC9-E43A-4E9B-A9F2-47AF211343C4}.Debug|x64.Build.0 = Debug|x64
+		{EC014CC9-E43A-4E9B-A9F2-47AF211343C4}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC014CC9-E43A-4E9B-A9F2-47AF211343C4}.Debug|x86.Build.0 = Debug|Win32
+		{EC014CC9-E43A-4E9B-A9F2-47AF211343C4}.Release|x64.ActiveCfg = Release|x64
+		{EC014CC9-E43A-4E9B-A9F2-47AF211343C4}.Release|x64.Build.0 = Release|x64
+		{EC014CC9-E43A-4E9B-A9F2-47AF211343C4}.Release|x86.ActiveCfg = Release|Win32
+		{EC014CC9-E43A-4E9B-A9F2-47AF211343C4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
