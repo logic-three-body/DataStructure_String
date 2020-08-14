@@ -22,10 +22,10 @@ public:
 
 	//配合KMP_Match寻找合适下标 https://github.com/logic-three-body/CLRS/blob/master/C32-String-Matching/KMP.c
 	int* compute_prefix_function(const char *);
-	int* compute_prefix_function(const String &);
+	int* compute_prefix_function();
 	//KMP from 算法导论
 	int KMP_match(const char *);
-	int KMP_match(const String &);
+	int KMP_match(String &);
 
 	int length() const;
 

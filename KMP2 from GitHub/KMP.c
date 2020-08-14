@@ -5,6 +5,7 @@
 
 /*
  * calculate our next array
+ *KMP算法的精髓所在，核心思想是“P自己与自己做匹配”。
  */
 int* compute_prefix_function(char *pattern)
 {
@@ -49,8 +50,8 @@ int KMP_match(char *text, char *pattern)
 
 int main()
 {
-	char *s1 = "bababaababababca";
-	char *s2 = "ababababca";
+	char *s1 = "ababaabaabac";
+	char *s2 = "abaabac";
 	int offset = KMP_match(s1, s2);
 	printf("offset is %d\n", offset);
 	return 0;

@@ -85,9 +85,9 @@ int * String::compute_prefix_function(const char * pattern)
 	return next;
 }
 
-int * String::compute_prefix_function(const String &pattern)
+int * String::compute_prefix_function()
 {
-	int m = pattern.length();
+	int m = len;
 	int *next = new int[m];
 	next[0] = 0;
 	int k = 0;
@@ -95,9 +95,9 @@ int * String::compute_prefix_function(const String &pattern)
 
 	for (q = 1; q < m; q++)
 	{
-		while (k > 0 && (pattern[k] != pattern[q]))
+		while (k > 0 && (str[k] != str[q]))
 			k = next[k - 1];
-		if (pattern[k] == pattern[q])
+		if (str[k] == str[q])
 			k++;
 		next[q] = k;
 	}
@@ -125,11 +125,11 @@ int String::KMP_match(const char *pattern)
 	return -1;
 }
 
-int String::KMP_match(const String &pattern)
+int String::KMP_match(String &pattern)
 {
 	int n = len;
 	int m = pattern.len;
-	int *next = compute_prefix_function(pattern);
+	int *next = pattern.compute_prefix_function();
 	int q = 0;
 	int i;
 
