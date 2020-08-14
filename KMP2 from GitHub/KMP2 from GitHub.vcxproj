@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{EC014CC9-E43A-4E9B-A9F2-47AF211343C4}</ProjectGuid>
-    <RootNamespace>StringPlus</RootNamespace>
+    <ProjectGuid>{25D31E2D-4F6D-4212-875A-4881D4C23480}</ProjectGuid>
+    <RootNamespace>KMP2fromGitHub</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,11 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="string.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="string1.h" />
+    <ClCompile Include="KMP.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

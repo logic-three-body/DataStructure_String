@@ -66,6 +66,86 @@ String ::~String()
 	// required
 }
 
+int * String::compute_prefix_function(const char * pattern)
+{
+	int m = strlen(pattern);
+	int *next = new int[m];
+	next[0] = 0;
+	int k = 0;
+	int q;
+
+	for (q = 1; q < m; q++)
+	{
+		while (k > 0 && (pattern[k] != pattern[q]))
+			k = next[k - 1];
+		if (pattern[k] == pattern[q])
+			k++;
+		next[q] = k;
+	}
+	return next;
+}
+
+int * String::compute_prefix_function(const String &pattern)
+{
+	int m = pattern.length();
+	int *next = new int[m];
+	next[0] = 0;
+	int k = 0;
+	int q;
+
+	for (q = 1; q < m; q++)
+	{
+		while (k > 0 && (pattern[k] != pattern[q]))
+			k = next[k - 1];
+		if (pattern[k] == pattern[q])
+			k++;
+		next[q] = k;
+	}
+	return next;
+}
+
+int String::KMP_match(const char *pattern)
+{
+	int n = len;
+	int m = strlen(pattern);
+	int *next = compute_prefix_function(pattern);
+	int q = 0;
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		while (q > 0 && (pattern[q] != str[i]))
+			q = next[q - 1];
+		if (pattern[q] == str[i])
+			q++;
+		if (q == m)
+			return i + 1 - m;
+	}
+	delete[] next;
+	return -1;
+}
+
+int String::KMP_match(const String &pattern)
+{
+	int n = len;
+	int m = pattern.len;
+	int *next = compute_prefix_function(pattern);
+	int q = 0;
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		while (q > 0 && (pattern[q] != str[i]))
+			q = next[q - 1];
+		if (pattern[q] == str[i])
+			q++;
+		if (q == m)
+			return i + 1 - m;
+	}
+	delete[] next;
+	return -1;
+}
+
 String & String::operator=(const String &st)//deep copy
 {
 	// TODO: 在此处插入 return 语句

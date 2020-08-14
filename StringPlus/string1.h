@@ -20,6 +20,12 @@ public:
 	~String();
 	// destructor.
 
+	//配合KMP_Match寻找合适下标 https://github.com/logic-three-body/CLRS/blob/master/C32-String-Matching/KMP.c
+	int* compute_prefix_function(const char *);
+	int* compute_prefix_function(const String &);
+	//KMP from 算法导论
+	int KMP_match(const char *);
+	int KMP_match(const String &);
 
 	int length() const;
 
@@ -30,6 +36,10 @@ public:
 	String(const String&);//copy function
 	String & operator=(const char*);
 
+
+
+
+
 	   // friend function
 	friend std::ostream & operator<<(std::ostream & os,
 		const  String & st);
@@ -38,6 +48,7 @@ public:
 	friend bool operator<(const String&,const String&);
 	friend bool operator>(const String&, const String&);
 	friend bool operator==(const String&, const String&);
+
 
 	//static function
 	static int HowMany();
