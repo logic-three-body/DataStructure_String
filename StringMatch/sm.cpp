@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>//KMP match Virus vs Human
 #include<string>
 #define OK 1
 #define ERROR -1
